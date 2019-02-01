@@ -811,7 +811,7 @@ a:hover {
 }
 
 .feature-item {
-  background: #e6e6e6;
+
   padding: 20px;
   text-align: center;
   border-radius: 4px;
@@ -850,7 +850,7 @@ a:hover {
   transition: 0.3s all ease;
 }
 .feature-item:hover {
-  background: #28a745;
+  background: #cccccc;
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
@@ -869,6 +869,12 @@ a:hover {
 .feature-item:hover  .bid-btn {
   background: white;
   color: green;
+
+
+}
+.bid-btn{
+  background-color: forestgreen;
+  color: white;
 }
 
 .image-play {
@@ -1337,7 +1343,7 @@ option {
 
 .btn btn-primary {
   margin-left: 10px;
-  background: green;
+
   font-size: 10px;
 }
 
@@ -1345,7 +1351,7 @@ option {
   margin-top: 5px;
   padding: 10px 36px 10px;
   border-radius: 5px;
-  background: green;
+  
   color: white;
   position: relative;
   bottom: 5px;
@@ -1353,7 +1359,7 @@ option {
 
 .bid-btn:hover {
   background: white;
-  color: green;
+  
 }
 
 /* .price-proposal
