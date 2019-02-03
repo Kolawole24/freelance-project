@@ -22,9 +22,11 @@
     
     
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="../jobfinder/hire-on-font/flaticon.css">
+    <link rel="stylesheet" href="fonts-(3)/flaticon/font/flaticon.css">
+    <!-- <link rel="stylesheet" href="../jobfinder/hire-on-font/flaticon.css"> -->
     <!-- <link rel="stylesheet" href="font-1/flaticon.css"> -->
-    <link rel="stylesheet" href="font-2/flaticon.css">
+    <!-- <link rel="stylesheet" href="font-2/flaticon.css"> -->
+    <!-- <link rel="stylesheet" href="naira-font/flaticon.css"> -->
     <!-- <link rel="stylesheet" href="icons/font/flaticon.css"> -->
   
     <link rel="stylesheet" href="css/aos.css">
@@ -100,7 +102,7 @@
               <a href="#" class="h-100 feature-item">
                 <span class="d-block icon flaticon-calculator mb-3 text-primary"></span>
                 <h2>Ministry of Information and Technology: Upgrade to WebApp</h2>
-                <small><em> Requirement: Must have at least 5 years experience</em></small> <br> <br>
+                <small><em> Requirement: Must have at least 2+ years experience</em></small> <br> <br>
                 <span class="counting">10 bids</span> <br> <br>
                 <span class="bid-btn" data-toggle="modal" data-target="#bidModal">Bid</span>
               </a>
@@ -160,7 +162,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="bidModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h2 class="modal-title" id="exampleModalCenterTitle">Submit your Bid</h2>
@@ -184,30 +186,35 @@
             </div>
             <hr>
 
-            <form class="sign-up">
-          
-              <div class="form-group">
-                <!-- <label for="exampleInputEmail1">Email address</label> -->
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-              </div>
+            <div class="job-pricing">
+            <h5>What is the full amount you would like to bid for this job?</h5>
+              <h5>Bid</h5>
+              <div class="price-proposal">
+              <span> <p>Total amount the client will see on your proposal</p></span> 
+            <i class="flaticon-nigeria-naira-currency-symbol" id="naira-symbol"> <input type="number" class="form-control" id="proposal-price" v-model.number = "clientPay" aria-describedby="proposal-price" placeholder="" style="margin-left:3px;"></i>
+            </div>
+            <hr>
+            <span> <h5>HireOn Service Fee</h5></span> <span class="service-fee">Explain this</span>
+            <input type="number" class="form-control" id="serv-fee" placeholder="-3%" style="margin-left:3px;" disabled>
 
-              <div class="form-group">
-                <input class="form-control" type="text" placeholder="Phone Number">
-              </div>
-        
-              <div class="form-group">
-                <!-- <label for="exampleInputPassword1">Password</label> -->
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              </div>
-        
-              <div class="form-group">
-                <input class="form-control" type="text" placeholder="Your Full Name">
-                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-              </div>
+            <hr>
+            <h5>You'll Receive</h5>
+            <p>The estimated amount you'll receive after service fees</p>
+            <input type="number" class="form-control" id="serv-fee" placeholder="&#8358;24,250" style="margin-left:3px;" disabled>
+            <hr>
+            <br>
+            <div class="additional-details">
+            <div class="additional-details-title" style="margin-left:0px; margin-right: 0px;">
+            <h5>Additional details</h5>
           </div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <h5>Cover Letter</h5>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" style="min-width: 100%; margin-left:3px;"></textarea>
+        </div>
+
+
+
+          </div>
+            <div class="modal-footer"> 
             <button type="button" class="btn btn-primary">Submit</button>
           </div>
         </div>
@@ -215,213 +222,209 @@
     </div>
     <!-- / Modal -->
 
-    <div class="site-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-            <h2 class="mb-5">Categories</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="100">
-            <a href="#" class="h-100 feature-item">
-              <span class="d-block icon flaticon-coding mb-3 text-primary"></span>
-              <h2>Web Development</h2>
-              <span class="counting">10,391</span>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="200">
-            <a href="#" class="h-100 feature-item">
-              <span class="d-block icon flaticon-website-design-symbol mb-3 text-primary"></span>
-              <h2>Web Design</h2>
-              <span class="counting">192</span>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="300">
-            <a href="#" class="h-100 feature-item">
-              <span class="d-block icon flaticon-graphic-tool mb-3 text-primary"></span>
-              <h2>Graphics Design</h2>
-              <span class="counting">1,021</span>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="400">
-            <a href="#" class="h-100 feature-item">
-              <span class="d-block icon flaticon-hosting mb-3 text-primary"></span>
-              <h2>System Administration</h2>
-              <span class="counting">1,219</span>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="500">
-            <a href="#" class="h-100 feature-item">
-              <span class="d-block icon flaticon-camera mb-3 text-primary"></span>
-              <h2>Photography</h2>
-              <span class="counting">482</span>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="600">
-            <a href="#" class="h-100 feature-item">
-              <span class="d-block icon flaticon-digital-marketing mb-3 text-primary"></span>
-              <h2>Digital Marketing</h2>
-              <span class="counting">5,409</span>
-            </a>
-          </div>
-        </div>
+    
+  </div>
 
+  <div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+          <h2 class="mb-5">Categories</h2>
+        </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="100">
+          <a href="#" class="h-100 feature-item">
+            <span class="d-block icon flaticon-code mb-3 text-primary"></span>
+            <h2>Web Development</h2>
+            <span class="counting">10,391</span>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="200">
+          <a href="#" class="h-100 feature-item">
+            <span class="d-block icon flaticon-web-design mb-3 text-primary"></span>
+            <h2>Web Design</h2>
+            <span class="counting">192</span>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="300">
+          <a href="#" class="h-100 feature-item">
+            <span class="d-block icon flaticon-computer-graphic mb-3 text-primary"></span>
+            <h2>Graphics Design</h2>
+            <span class="counting">1,021</span>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="400">
+          <a href="#" class="h-100 feature-item">
+            <span class="d-block icon flaticon-network mb-3 text-primary"></span>
+            <h2>System Administration</h2>
+            <span class="counting">1,219</span>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="500">
+          <a href="#" class="h-100 feature-item">
+            <span class="d-block icon flaticon-dslr mb-3 text-primary"></span>
+            <h2>Photography</h2>
+            <span class="counting">482</span>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="600">
+          <a href="#" class="h-100 feature-item">
+            <span class="d-block icon flaticon-digital-marketing mb-3 text-primary"></span>
+            <h2>Digital Marketing</h2>
+            <span class="counting">5,409</span>
+          </a>
+        </div>
+      </div>
 
-    <!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    Sign Up
-  </button> -->
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title" id="exampleModalCenterTitle">Sign Up</h2>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form class="sign-up">
-        
-        <div class="form-group">
-         
-          <select class="custom-select custom-select-lg mb-3" required>
-            <option value="" disabled selected>I am a freelance...</option>
-            <option value="1"> Web Developer</option>
-            <option value="2">Web Designer</option>
-            <option value="3">Graphics Designer</option>
-            <option value="4">System Administrator</option>
-            <option value="5">Photographer</option>
-            <option value="6">Digital Marketer</option>
-          </select>
-  
-          <select class="custom-select custom-select-lg mb-3" required>
-            <option value="" disabled selected>States</option>
-            <option value="0">Abia</option>
-            <option value="1">Adamawa</option>
-            <option value="2">Akwa-Ibom</option>
-            <option value="3">Bauchi</option>
-            <option value="4">Delta</option>
-            <option value="5">Enugu</option>
-            <option value="6">Imo</option>
-            <option value="7">Yobe</option>
-            <option value="8">Cross River</option>
-            <option value="9">Gombe</option>
-            <option value="10">Kebbi</option>
-            <option value="11">Ekiti</option>
-            <option value="12">Zamfara</option>
-            <option value="14">Benue</option>
-            <option value="15">Osun</option>
-            <option value="16">Oyo</option>
-            <option value="17">Ondo</option>
-            <option value="18">Bayelsa</option>
-            <option value="19">Rivers</option>
-            <option value="20">Lagos</option>
-            <option value="21">Borno</option>
-            <option value="22">Anambra</option>
-            <option value="23">Taraba</option>
-            <option value="24">Nassarawa</option>
-            <option value="25">Edo</option>
-            <option value="26">Fededral Capital Territory</option>
-          </select>
-  
-          <!-- <label for="exampleInputEmail1">Email address</label> -->
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-        
-          <input class="form-control" type="text" placeholder="Phone Number">
-  
-  
-        <div class="form-group">
-          <!-- <label for="exampleInputPassword1">Password</label> -->
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-      
-        <input class="form-control" type="text" placeholder="Your Full Name">
-  
-        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-      
-  
-      </div>
-        </div>
-        <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-          <button type="button" class="btn btn-primary">Submit</button>
-        </div>
-      </div>
     </div>
   </div>
-  <!-- / Modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalCenterTitle">Sign Up</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="sign-up">
+      
+      <div class="form-group">
+       
+        <select class="custom-select custom-select-lg mb-3" required>
+          <option value="" disabled selected>I am a freelance...</option>
+          <option value="1"> Web Developer</option>
+          <option value="2">Web Designer</option>
+          <option value="3">Graphics Designer</option>
+          <option value="4">System Administrator</option>
+          <option value="5">Photographer</option>
+          <option value="6">Digital Marketer</option>
+        </select>
+
+        <select class="custom-select custom-select-lg mb-3" required>
+          <option value="" disabled selected>States</option>
+          <option value="0">Abia</option>
+          <option value="1">Adamawa</option>
+          <option value="2">Akwa-Ibom</option>
+          <option value="3">Bauchi</option>
+          <option value="4">Delta</option>
+          <option value="5">Enugu</option>
+          <option value="6">Imo</option>
+          <option value="7">Yobe</option>
+          <option value="8">Cross River</option>
+          <option value="9">Gombe</option>
+          <option value="10">Kebbi</option>
+          <option value="11">Ekiti</option>
+          <option value="12">Zamfara</option>
+          <option value="14">Benue</option>
+          <option value="15">Osun</option>
+          <option value="16">Oyo</option>
+          <option value="17">Ondo</option>
+          <option value="18">Bayelsa</option>
+          <option value="19">Rivers</option>
+          <option value="20">Lagos</option>
+          <option value="21">Borno</option>
+          <option value="22">Anambra</option>
+          <option value="23">Taraba</option>
+          <option value="24">Nassarawa</option>
+          <option value="25">Edo</option>
+          <option value="26">Fededral Capital Territory</option>
+        </select>
+
+        
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+        
+      
+        <input class="form-control" type="text" placeholder="Phone Number">
+
+
+      <div class="form-group">
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+    
+      <input class="form-control" type="text" placeholder="Your Full Name">
 
     
-    <footer class="site-footer">
-      <div class="container">
-        
 
-        <div class="row">
-          <div class="col-md-4">
-            <h3 class="footer-heading mb-4 text-white">About</h3>
-            <p>Our goal at HireOn is to connect clients around Nigeria with freelance workers</br>with quality and security guaranteed.</p>
-            <!-- <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p> -->
-          </div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-6">
-                <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
-                  <ul class="list-unstyled">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Approach</a></li>
-                    <li><a href="#">Sustainability</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Careers</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-6">
-                <h3 class="footer-heading mb-4 text-white">Categories</h3>
-                  <ul class="list-unstyled">
-                    <li><a href="#">Full Time</a></li>
-                    <li><a href="#">Freelance</a></li>
-                    <li><a href="#">Temporary</a></li>
-                    <li><a href="#">Internship</a></li>
-                  </ul>
-              </div>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / Modal -->
+
+  
+  <footer class="site-footer">
+    <div class="container">
+      
+
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="footer-heading mb-4 text-white">About</h3>
+          <p>Our goal at HireOn is to connect clients around Nigeria with freelance workers</br>with quality and security guaranteed.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Approach</a></li>
+                  <li><a href="#">Sustainability</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+              <h3 class="footer-heading mb-4 text-white">Categories</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Full Time</a></li>
+                
+                  <li><a href="#">Temporary</a></li>
+                  <li><a href="#">Internship</a></li>
+                </ul>
             </div>
           </div>
-
-          
-          <div class="col-md-2">
-            <div class="col-md-12"><h3 class="footer-heading mb-4 text-white">Social Icons</h3></div>
-              <div class="col-md-12">
-                <p>
-                  <a href="#" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
-                  <a href="#" class="p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="p-2"><span class="icon-instagram"></span></a>
-                  <a href="#" class="p-2"><span class="icon-vimeo"></span></a>
-
-                </p>
-              </div>
-          </div>
         </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-          </div>
-          
+
+        
+        <div class="col-md-2">
+          <div class="col-md-12"><h3 class="footer-heading mb-4 text-white">Social Icons</h3></div>
+            <div class="col-md-12">
+              <p>
+                <a href="#" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
+                <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+                <a href="#" class="p-2"><span class="icon-vimeo"></span></a>
+
+              </p>
+            </div>
         </div>
       </div>
-    </footer>
-  </div>
+      <div class="row pt-5 mt-5 text-center">
+        <div class="col-md-12">
+          <p>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="script.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
